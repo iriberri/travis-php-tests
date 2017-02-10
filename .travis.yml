@@ -1,7 +1,7 @@
 language: php
 php: 7
-sudo: false
-dist: precise
+sudo: required
+dist: trusty
 
 install:
 - sudo apt-get update
