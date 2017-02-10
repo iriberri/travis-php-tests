@@ -1,0 +1,11 @@
+language: php
+php: 7
+sudo: required
+dist: precise
+
+install:
+- sudo apt-get update
+- sudo apt-get install pdftk
+- composer self-update
+- composer install --prefer-dist --no-interaction
+- composer require --prefer-dist mikehaertl/pdftk2-precise-amd64
